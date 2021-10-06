@@ -1,12 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using FearGenerator.Models;
 using System.Collections.Generic;
 using System;
 
-namespace ProjectName.Tests
+namespace FearGenerator.Tests
 {
   [TestClass]
-  public class ChildClassTests
+  public class SubgenreTests
   {
     
   }

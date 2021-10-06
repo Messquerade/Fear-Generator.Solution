@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjectName\ProjectName.csproj" />  
+    <ProjectReference Include="..\FearGenerator\FearGenerator.csproj" />  
   </ItemGroup>
 
 </Project>

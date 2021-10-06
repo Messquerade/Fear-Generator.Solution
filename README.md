@@ -1,17 +1,25 @@
-# (Application Name)
+# Fear Generator
 
-#### (Brief Description of Application)
+#### Create a watch list for the spooky season with all your horror movie favorites!
 
-#### By Anna Clarke
+#### By Anna Clarke, Melissa Schatz-Miller, Diego Serafico
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _C#_
+* _ASP.NET Core MVC_
+* _.NET 5_
+* _NuGet_
+* _MSTest????_
 
 ## Description
+
+This web application will allow users to create horror subgenres to organize their horror movie watch list. They can then add movies to each subgenre, giving each one a rating, number of stars, release year etc.
+
+### Technology Requirements
+
+* [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+* A text editor like [VS Code](https://code.visualstudio.com/)
 
 ## Setup/Installation Requirements
 
@@ -27,5 +35,10 @@
 * _should go here_
 
 ## License
+_[GPL](https://opensource.org/licenses/gpl-license)_
 
 ## Contact Information
+
+Anna Clarke: <anclarkie@gmail.com>
+Melissa Schatz-Miller: <melissa.scmi@gmail.com>
+Diego Serafico: <dseraficohernandez@gmail.com>
