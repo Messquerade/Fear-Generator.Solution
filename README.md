@@ -4,6 +4,10 @@
 
 #### By Anna Clarke, Melissa Schatz-Miller, Diego Serafico
 
+<p align="center">
+  <img src="FearGenerator/wwwroot/img/dataSchema.png">  
+</p>
+
 ## Technologies Used
 
 * _C#_

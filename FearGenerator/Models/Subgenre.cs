@@ -6,7 +6,7 @@ namespace FearGenerator.Models
   {
     public Subgenre()
     {
-      this.Subgenre = new HashSet<Subgenre>();
+      this.Movies = new HashSet<Movie>();
     }
 
     public int SubgenreId {get; set;}
