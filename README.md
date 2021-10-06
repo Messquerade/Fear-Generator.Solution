@@ -44,5 +44,5 @@ _[GPL](https://opensource.org/licenses/gpl-license)_
 ## Contact Information
 
 Anna Clarke: <anclarkie@gmail.com>
-Melissa Schatz-Miller: <melissa.scmi@gmail.com>
+🍃 Melissa Schatz-Miller: <melissa.scmi@gmail.com>
 Diego Serafico: <dseraficohernandez@gmail.com>

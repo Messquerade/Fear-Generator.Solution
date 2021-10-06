@@ -1,0 +1,25 @@
+@{
+  Layout ="_Layout";
+}
+
+@model FearGenerator.Models.Movie
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Title)
+  @Html.TextBoxFor(model => model.Title)<br/>
+  @Html.LabelFor(model => model.Rating)<br/>
+  @Html.RadioButtonFor(model => model.Rating, "G")<span> G</span><br />
+  @Html.RadioButtonFor(model => model.Rating, "PG")<span> PG</span><br />
+  @Html.RadioButtonFor(model => model.Rating, "PG13")<span> PG13</span><br />
+  @Html.RadioButtonFor(model => model.Rating, "R")<span> R</span><br />
+  @Html.RadioButtonFor(model => model.Rating, "Unrated")<span> Unrated</span><br />
+  @Html.LabelFor(model => model.Year)<br />
+  @Html.TextBoxFor(model => model.Year, new { type = "number", min = "1888", step = "1" })<br />
+  @Html.LabelFor(model => model.Stars)<br />
+  @Html.TextBoxFor(model => model.Stars, new { type = "number", min = "1", max = "5", step = "1" })<br />
+  @Html.DropDownList("SubgenreId")<br />
+
+  <input type="submit" value="Add New Movie"/>
+
+}
