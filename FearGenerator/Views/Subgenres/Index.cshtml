@@ -1,3 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+
 @using FearGenerator.Models;
 @model List<FearGenerator.Models.Subgenre>;
 
@@ -8,7 +12,7 @@
   <h3>There are no subgenres</h3>
 }
 
-<ul></ul>
+<ul>
   @foreach(Subgenre subgenre in Model)
   {
     <li>@Html.ActionLink($"{subgenre.Name}", "Details", new {id = subgenre.SubgenreId})
@@ -18,3 +22,6 @@
     </li>
   }
 </ul>
+
+<p>@Html.ActionLink("Add a subgenre", "Create")</p>
+<p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
