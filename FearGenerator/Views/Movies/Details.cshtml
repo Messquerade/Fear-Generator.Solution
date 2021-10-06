@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@using FearGenerator.Models
+@model FearGenerator.Models.Movie
+
+@Html.DisplayNameFor(model => model.Title): @Html.DisplayFor(model => model.Title)<br />
+@Html.DisplayNameFor(model => model.Rating): @Html.DisplayFor(model => model.Rating)<br />
+@Html.DisplayNameFor(model => model.Year): @Html.DisplayFor(model => model.Year)<br />
+@Html.DisplayNameFor(model => model.Stars): @Html.DisplayFor(model => model.Stars)<br />
+Subgenre: @Html.DisplayFor(model => model.Subgenre.Name)
+
+<p>@Html.ActionLink("Back to Movies", "Index")</p>
+<p>@Html.ActionLink("See all Subgenres", "Index", "Subgenres")</p>

@@ -42,7 +42,7 @@ This web application will allow users to create horror subgenres to organize the
 _[GPL](https://opensource.org/licenses/gpl-license)_
 
 ## Contact Information
-
+                       🍃
 Anna Clarke: <anclarkie@gmail.com>
 🍃 Melissa Schatz-Miller: <melissa.scmi@gmail.com>
-Diego Serafico: <dseraficohernandez@gmail.com>
+Diego Serafico: <dseraficohernandez@gmail.com> 🍃

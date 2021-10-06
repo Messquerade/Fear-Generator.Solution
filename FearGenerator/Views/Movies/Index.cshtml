@@ -12,3 +12,6 @@
     <li>@Html.ActionLink($"{movie.Title}", "Details", new { id = movie.MovieId}) | @Html.ActionLink($"{movie.Subgenre.Name}", "Details", "Subgenres", new {id = movie.SubgenreId})</li>
   }
 </ul>
+
+<p>@Html.ActionLink("See all Subgenres", "Index", "Subgenres")</p>
+<p>@Html.ActionLink("Back to Home", "Index", "Home")</p>

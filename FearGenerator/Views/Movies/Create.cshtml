@@ -3,7 +3,7 @@
 }
 
 @model FearGenerator.Models.Movie
-
+<div class="container">
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Title)
@@ -23,3 +23,4 @@
   <input type="submit" value="Add New Movie"/>
 
 }
+</div>

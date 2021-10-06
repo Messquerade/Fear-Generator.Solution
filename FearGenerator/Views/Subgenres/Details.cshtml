@@ -9,7 +9,7 @@
 <ul>
   @foreach(Movie movie in Model.Movies)
   {
-    <li>@Html.ActionLink($"{movie.Title}", "Details", new { id = movie.MovieId}) | @movie.Subgenre.Name</li>
+    <li>@Html.ActionLink($"{movie.Title}", "Details", "Movies", new { id = movie.MovieId}) | @movie.Subgenre.Name</li>
   }
 </ul>
 

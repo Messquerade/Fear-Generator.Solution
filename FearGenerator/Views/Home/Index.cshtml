@@ -1,8 +1,15 @@
-<h1>Welcome to your DOOM!</h1>
+@{
+  Layout ="_Layout";
+}
+<div class="container">
+<section class="survival">
+<h1 class="survival bleeding">Welcome to your DOOM!</h1>
 <h2>A horrifying movie list to satisfy all your spooktacular viewing needs.</h2>
+</section>
 
 <h3>Would you like to add a horror subgenre?</h3>
 
 <p>@Html.ActionLink("Add a Subgenre", "Create", "Subgenres")</p>
 <p>@Html.ActionLink("See all Subgenres", "Index", "Subgenres")</p>
 <p>@Html.ActionLink("See all Movies", "Index", "Movies")</p>
+</div>
