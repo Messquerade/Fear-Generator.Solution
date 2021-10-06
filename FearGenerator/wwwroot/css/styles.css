@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Nosifer&display=swap');
 
 body {
   background-color:#000;
@@ -9,8 +9,8 @@ body {
   padding: 3% 0 0 0;
 }
 
-h1 {
-  font-family: 'Nosifer', cursive;
+h1, h2, h3, h4, h5 {
+  font-family: 'Creepster', cursive;
 }
 
 a {
@@ -35,8 +35,8 @@ body {
   margin: 0px;
 }
 
-body * {
-  font-family: 'Creepster', cursive;
+body {
+  font-family: 'Eater', cursive;
 }
 
 /* Section */
