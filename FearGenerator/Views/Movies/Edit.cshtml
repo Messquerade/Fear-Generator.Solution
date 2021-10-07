@@ -1,32 +1,35 @@
 @{
-  Layout ="_Layout";
+  Layout= "_Layout";
 }
 
+@using FearGenerator.Models
 @model FearGenerator.Models.Movie
 <div class="container">
 <span>&nbsp;</span>
-<section class=survival>
-<h1 class="survival bleeding">Add a Movie</h1>
-<h4>...if you dare</h4>
-<span>&nbsp;</span>
+<h1 class="survival bleeding">Edit @Model.Title</h1>
+
 @using (Html.BeginForm())
-{
+
+  @Html.HiddenFor(model => model.MovieId)
+
   @Html.LabelFor(model => model.Title)
-  @Html.TextBoxFor(model => model.Title)<br/>
+  @Html.EditorFor(model => model.Title)<br/>
+
   @Html.LabelFor(model => model.Rating)<br/>
   @Html.RadioButtonFor(model => model.Rating, "G")<span> G</span><br />
   @Html.RadioButtonFor(model => model.Rating, "PG")<span> PG</span><br />
   @Html.RadioButtonFor(model => model.Rating, "PG13")<span> PG13</span><br />
   @Html.RadioButtonFor(model => model.Rating, "R")<span> R</span><br />
   @Html.RadioButtonFor(model => model.Rating, "Unrated")<span> Unrated</span><br />
+
   @Html.LabelFor(model => model.Year)<br />
-  @Html.TextBoxFor(model => model.Year, new { type = "number", min = "1888", step = "1" })<br />
+  @Html.EditorFor(model => model.Year, new { type = "number", min = "1888", step = "1" })<br />
+
   @Html.LabelFor(model => model.Stars)<br />
-  @Html.TextBoxFor(model => model.Stars, new { type = "number", min = "1", max = "5", step = "1" })<br />
+  @Html.EditorFor(model => model.Stars, new { type = "number", min = "1", max = "5", step = "1" })<br />
+
   @Html.DropDownList("SubgenreId")<br />
 
-  <input type="submit" value="Add New Movie"/>
-
+  <input type="submit" value="Save"/>
 }
-</section>
 </div>

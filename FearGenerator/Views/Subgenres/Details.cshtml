@@ -4,6 +4,8 @@
 @using FearGenerator.Models
 @model FearGenerator.Models.Subgenre
 
+<div class="container">
+<span>&nbsp;</span>
 <h3>@Html.DisplayFor(model => model.Name)</h3>
 
 <ul>
@@ -16,3 +18,4 @@
 
 <p>@Html.ActionLink("Add a Movie", "Create", "Movies")</p>
 <p></p>@Html.ActionLink("See All Subgenres", "Index")</p>
+</div>

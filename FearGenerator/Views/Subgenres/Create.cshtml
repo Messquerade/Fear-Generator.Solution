@@ -4,7 +4,10 @@
 
 @model FearGenerator.Models.Subgenre
 
-<h2>Add a Subgenre</h2>
+<div class="container">
+<span>&nbsp;</span>
+<section class=survival>
+<h1 class="survival bleeding">Add a Subgenre</h1>
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
@@ -15,3 +18,6 @@
 }
 
 <p>@Html.ActionLink("See all Subgenres", "Index")</p>
+<p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
+</section>
+</div>

@@ -4,7 +4,8 @@
 @using FearGenerator.Models;
 @model List<FearGenerator.Models.Movie>;
 <div class="container">
-<h1>Movies</h1>
+<section class="survival">
+<h1 class="survival bleeding">Movies</h1>
 
 <ul>
   @foreach(Movie movie in Model)
@@ -13,15 +14,10 @@
   }
 </ul>
 
-@* @using (Html.BeginForm())
-{
-  <p>
-    Search: @Html.TextBox("SearchString")<br />
-    <input type="submit" value="Search" />
-  </p>
-} *@
 
 <p>@Html.ActionLink("Search Movies", "Search")</p>
+<p>@Html.ActionLink("Add a Movie", "Create")</p>
 <p>@Html.ActionLink("See all Subgenres", "Index", "Subgenres")</p>
 <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
+</section>
 </div>

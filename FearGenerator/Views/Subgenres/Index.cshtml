@@ -5,11 +5,14 @@
 @using FearGenerator.Models;
 @model List<FearGenerator.Models.Subgenre>;
 
-<h1>Horror Movie Subgenres</h1>
+<div class="container">
+<span>&nbsp;</span>
+<section class=survival>
+<h1 class="survival bleeding">Horror Subgenres</h1>
 
 @if (Model.Count == 0)
 {
-  <h3>There are no subgenres</h3>
+  <h3>You have not added any subgenres, yet...</h3>
 }
 
 <ul>
@@ -25,3 +28,5 @@
 
 <p>@Html.ActionLink("Add a subgenre", "Create")</p>
 <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
+</section>
+</div>

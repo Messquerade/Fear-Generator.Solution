@@ -13,15 +13,20 @@ ul {
   padding: 3% 0 0 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
+  font-family: 'Nosifer', cursive;
+}
+
+h2, h3, h4, h5 {
   font-family: 'Creepster', cursive;
 }
 
 a {
-  color:crimson;
+  color:#cc1212
 }
+
 a:hover {
-  color:darkred;
+  color:#8a0303;
   text-decoration:none;
 }
 
@@ -37,10 +42,31 @@ body {
   background-color: #000;
   padding: 0px;
   margin: 0px;
+  font-family: 'Eater', cursive;
 }
 
-body {
-  font-family: 'Eater', cursive;
+.bottomOpts {
+  padding: 50px 0 0 0;
+}
+
+.column2 {
+  float:left;
+  width:40%;
+}
+
+div#header {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+.column {
+  float:right;
+  width:15%;
 }
 
 /* Section */

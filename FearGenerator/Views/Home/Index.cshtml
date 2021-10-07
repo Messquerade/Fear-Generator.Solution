@@ -7,9 +7,15 @@
 <h2>A horrifying movie list to satisfy all your spooktacular viewing needs.</h2>
 </section>
 
-<h3>Would you like to add a horror subgenre?</h3>
-
+<div class="column2">
+<h3>Update your List</h3>
+<p>@Html.ActionLink("Add a Movie", "Create", "Movies")</p>
 <p>@Html.ActionLink("Add a Subgenre", "Create", "Subgenres")</p>
+</div>
+
+<div class="column2">
+<h3>View your List</h3>
 <p>@Html.ActionLink("See all Subgenres", "Index", "Subgenres")</p>
 <p>@Html.ActionLink("See all Movies", "Index", "Movies")</p>
+</div>
 </div>

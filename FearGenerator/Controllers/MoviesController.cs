@@ -51,10 +51,24 @@ namespace FearGenerator.Controllers
     [HttpPost]
     public ActionResult Search(string title)
     {
-      // var filteredUsers = listOfUsers.Where(user => user.Name.StartsWith("J") && user.Age < 40);
       string searchTerm = title.ToLower();
       List<Movie> searchResult = _db.Movies.Where(movie => movie.Title.Contains(searchTerm)).ToList();
       return View("Index", searchResult);
+    }
+
+    public ActionResult Edit(int id)
+    {
+      Movie thisMovie = _db.Movies.FirstOrDefault(movie => movie.MovieId == id);
+      ViewBag.SubgenreId = new SelectList(_db.Subgenres, "SubgenreId", "Name");
+      return  View(thisMovie);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Movie movie)
+    {
+      _db.Entry(movie).State = EntityState.Modified;
+      _db.SaveChanges();
+      return RedirectToAction("Details", new { id = movie.MovieId});
     }
   }
 }
