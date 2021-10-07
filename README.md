@@ -30,11 +30,13 @@ This web application will allow users to create horror subgenres to organize the
 * _Open in text editor_
 * _Create appsettings.json in /FearGenerator/ directory_
 * _Copy this code into appsettings.json, replacing YOUR_PASSWORD with your MySQL password:_
-```{
+```
+{
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=fear_generator;uid=root;pwd=YOUR_PASSWORD;"
   }
-}```
+}
+```
 * _open new terminal and run SQL ($ mysql -uroot -p{your_password})_
 * _open MySQL Workbench_
 * _In the Navigator > Administration window, select Data Import/Restore.
@@ -48,6 +50,9 @@ This web application will allow users to create horror subgenres to organize the
 * _enter command $ dotnet build, to build program_
 * _enter command $ dotnet run, to view program in your browser_
 * _follow instructions on the website and have a spooky time!_
+
+## Notes/Credits
+Thanks to [@Gwannon on Github](https://github.com/gwannon/Survival-horror-theme-css) for bloody text styling  
 
 ## Known Bugs
 
