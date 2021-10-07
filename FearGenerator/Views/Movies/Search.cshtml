@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@using FearGenerator.Models
+@model FearGenerator.Models.Movie
+
+<div class="container">
+<h3>Search for a Movie</h3>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Title)
+  @Html.TextBoxFor(model => model.Title)
+
+  <input type="submit" value="Search"/>
+}
+</div>
+

@@ -5,6 +5,10 @@ body {
   color:#fff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   padding: 3% 0 0 0;
 }

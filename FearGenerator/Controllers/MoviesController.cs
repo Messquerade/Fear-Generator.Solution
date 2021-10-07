@@ -42,5 +42,19 @@ namespace FearGenerator.Controllers
       Movie thisMovie = _db.Movies.FirstOrDefault(movie => movie.MovieId == id);
       return View(thisMovie);
     }
+
+    public ActionResult Search()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Search(string title)
+    {
+      // var filteredUsers = listOfUsers.Where(user => user.Name.StartsWith("J") && user.Age < 40);
+      string searchTerm = title.ToLower();
+      List<Movie> searchResult = _db.Movies.Where(movie => movie.Title.Contains(searchTerm)).ToList();
+      return View("Index", searchResult);
+    }
   }
 }
